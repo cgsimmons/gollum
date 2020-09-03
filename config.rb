@@ -9,3 +9,6 @@ It is especially useful for customizing supported formats/markups. For more info
 =end
 
 # enter your Ruby code here ...
+Precious::App.set(:wiki_options, { :universal_toc => true })
+Precious::App.set(:wiki_options, { :emoji => true })
+Precious::App.set(:wiki_options, { :page_file_dir => "docs" })

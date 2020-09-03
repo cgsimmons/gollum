@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  gollum:
+    image: cgsimmons/gollum
+    container_name: gollum
+    restart: always
+    ports:
+      - 4567:80
+    volumes:
+      - /home/creztoe/projects/wiki:/wiki
+      - /home/creztoe/projects/ruby/gollum/config.rb:/config/config.rb
